@@ -1,0 +1,6 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations For Your</h1>
+  CICD Deployment - Phase II
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
