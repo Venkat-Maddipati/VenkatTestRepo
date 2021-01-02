@@ -4,9 +4,9 @@
         <members>TestPage1</members>
         <name>ApexPage</name>
     </types>
-    <types>
+    <!--<types>
         <members>TestClass1</members>
         <name>ApexClass</name>
-    </types>
+    </types>-->
     <version>50.0</version>
 </Package>
