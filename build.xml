@@ -2,7 +2,7 @@
 <property file="build.properties"/>
 <property environment="env"/>
 <!--Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization’s namespace only-->
-<target name="deployall">
+<target name="deployUnpackaged">
 <sf:deploy username="${sf.username2}" password="${sf.password2}" serverurl="${sf.serverurl2}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
 </target>
 </project>
