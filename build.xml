@@ -31,7 +31,7 @@
     <target name="retrieveUnpackaged">
       <mkdir dir="retrieveUnpackaged"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sf.username1}" password="${sf.password1}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl1}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveUnpackaged" unpackaged="unpackaged/package.xml"/>
+      <sf:retrieve username="${sf.username1}" password="${sf.password1}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl1}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveUnpackaged" unpackaged="force-app/package.xml"/>
     </target>
 
     <!-- Retrieve all the items of a particular metadata type -->
@@ -46,7 +46,7 @@
 
     <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
     <target name="deployUnpackaged">
-      <sf:deploy username="${sf.username2}" password="${sf.password2}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl2}" maxPoll="${sf.maxPoll}" deployRoot="force-app" rollbackOnError="true" unpackaged="force-app/package.xml"/>
+      <sf:deploy username="${sf.username2}" password="${sf.password2}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl2}" maxPoll="${sf.maxPoll}" deployRoot="force-app" rollbackOnError="true"/>
     </target>
 
     <!-- Deploy a zip of metadata files to the org -->
